@@ -7,12 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'league-spartan': ['var(--font-league-spartan)', 'sans-serif'],
+      },
+      fontSize: {
+        'name': '4rem', // Very large for your name on the front page
+        'section-title': '2rem', // Large for section titles
+        'entry-title': '1.5rem', // A little smaller for experience/project titles
+      },
+      fontWeight: {
+        'name': '700', // Bold for your name on the front page
+        'section-title': '600', // Not as bold for section titles
+      },
+      boxShadow: {
+        yellow: '0 10px 15px -3px rgba(252, 211, 77, 0.4), 0 4px 6px -2px rgba(252, 211, 77, 0.1)',
       },
     },
   },
+  variants: {},
   plugins: [],
 }
