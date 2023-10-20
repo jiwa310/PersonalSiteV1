@@ -8,7 +8,7 @@ export default function Experience() {
         <img src="biopacific.jpg" alt="NSF Logo" className="w-[3.5rem] h-[3.5rem] mr-4" />
 
         <div className="w-3/4">
-          <h3 className="text-2xl font-semibold mb-2">Software Engineer Intern at NSF BioPacific MIP</h3>
+          <h3 className="text-2xl font-semibold mb-2">Software Engineer Intern at <a href="https://biopacificmip.org/" className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">NSF BioPacific MIP</a></h3>
           <p className="mb-4">June 2023 – Present</p>
 
           <ul className="list-disc pl-8">

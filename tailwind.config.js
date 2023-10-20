@@ -6,6 +6,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    height: {
+      '15': '3.75rem'
+    },
     extend: {
       fontFamily: {
         'league-spartan': ['var(--font-league-spartan)', 'sans-serif'],
@@ -24,6 +27,10 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      opacity: ['responsive', 'hover', 'focus', 'group-hover', 'delay-2000'],
+    },
+  },
   plugins: [],
 }

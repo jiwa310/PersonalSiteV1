@@ -1,20 +1,18 @@
-import Link from 'next/link'
-
-export default function Header() {
+export default function Header({ scrollToSection }) {
   return (
-    <header className="flex justify-between items-center py-4 px-6 sticky top-0 w-full font-league-spartan" style={{backgroundColor: 'var(--color-background)'}}>
+    <header className="flex justify-between items-center pt-3 px-6 sticky top-0 w-full font-league-spartan" style={{backgroundColor: 'var(--color-background)', zIndex: 999}}>
       <div>
         {/* Replace "logo.svg" with the path to your logo */}
-        <img src="logo.svg" alt="Logo" className="h-10 w-auto" />
+        <img src="Logo.svg" alt="Logo" className="h-15 w-auto" />
       </div>
 
       <nav>
         <ul className="flex space-x-8">
-          <li><a href="#about-me" className="text-yellow-400">About Me</a></li>
-          <li><a href="#experience" className="text-yellow-400">Experience</a></li>
-          <li><a href="#projects" className="text-yellow-400">Projects</a></li>
-          <li><a href="#skills" className="text-yellow-400">Skills</a></li>
-          <li><a href="#contact" className="text-yellow-400">Contact</a></li>
+          <li><button onClick={() => scrollToSection('about-me')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">About Me</button></li>
+          <li><button onClick={() => scrollToSection('experience')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Experience</button></li>
+          <li><button onClick={() => scrollToSection('projects')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Projects</button></li>
+          <li><button onClick={() => scrollToSection('skills')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Skills</button></li>
+          <li><button onClick={() => scrollToSection('contact')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Contact</button></li>
         </ul>
       </nav>
     </header>
