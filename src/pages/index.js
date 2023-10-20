@@ -6,6 +6,7 @@ import Experience from '../components/Experience'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
+import Socials from '@/components/Socials'
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -62,6 +63,7 @@ export default function Home() {
           <div ref={projectsRef}><Projects /></div>
           <div ref={skillsRef}><Skills /></div>
         </main>
+        <Socials />
         <div ref={contactRef}><Contact /></div>
       </div>
     </div>

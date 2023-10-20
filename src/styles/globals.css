@@ -49,3 +49,34 @@ html::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid var(--color-background); /* creates padding around scroll thumb */
 }
+
+.socials {
+  position: fixed;
+  right: 20px; /* Adjust this to move the icons to the left */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.socials::before {
+  content: "";
+  position: absolute;
+  left: 15px; /* Adjust this to move the line left or right */
+  top: 100%; /* Starts the line under the socials */
+  bottom: -100vh; /* Extends the line to the bottom of the page */
+  width: 2px; /* Width of the line */
+  background-color: gray; /* Color of the line */
+}
+
+.socials a {
+  display: block; /* Stacks the icons vertically */
+  margin-bottom: 20px; /* Adds space between the icons */
+}
+
+.socials a img {
+  width: 30px; /* Adjust this to change the size of the icons */
+  filter: brightness(0.75); /* Makes the icons gray */
+}
+
+.socials a:hover img {
+  filter: grayscale(0) sepia(1) hue-rotate(-60deg) saturate(2); /* Makes the icons yellow on hover */
+}
