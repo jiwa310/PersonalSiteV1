@@ -7,6 +7,7 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import Socials from '@/components/Socials'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -49,7 +50,7 @@ export default function Home() {
     <div>
       {loading && (
         <div className="loading-screen flex items-center justify-center h-screen" style={{ position: 'fixed', width: '100%', height: '100%', zIndex: 9999 }}>
-          <video autoPlay loop muted playsInline style={{ width: '100px', height: 'auto', transform: 'translate(-50%, -50%)', position: 'absolute', top: '50%', left: '50%' }}>
+          <video autoPlay loop muted playsInline style={{ width: '200px', height: 'auto', transform: 'translate(-50%, -50%)', position: 'absolute', top: '50%', left: '50%' }}>
             <source src="Loader.mp4" type="video/mp4" />
           </video>
         </div>      
@@ -65,6 +66,7 @@ export default function Home() {
         </main>
         <Socials />
         <div ref={contactRef}><Contact /></div>
+        <Footer />
       </div>
     </div>
   )
