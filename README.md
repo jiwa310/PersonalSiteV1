@@ -1,4 +1,4 @@
-## jim-wang.com
+## jimwang.me
 This is the first iteration of my personal site. Built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 Please contact me if you plan to use any of this code in your own projects. I will usually say yes, but please give me proper credit by linking back to jim-wang.com
