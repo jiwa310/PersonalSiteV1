@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <section id="projects" className="min-h-screen text-left pt-20 pl-20 pr-20 flex flex-col">
+    <section id="projects" className="min-h-screen text-left pt-20 pl-5 md:pl-20 pr-5 md:pr-20 flex flex-col">
       <h2 className="text-4xl font-bold mb-4 text-yellow-400">3. Projects</h2>
 
       <div className="flex flex-col gap-8">

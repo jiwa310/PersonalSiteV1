@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section id="experience" className="min-h-screen text-left pt-20 pl-20 pr-20 flex flex-col">
+    <section id="experience" className="min-h-screen text-left pt-20 pl-5 md:pl-20 pr-10 flex flex-col">
       <h2 className="text-4xl font-bold mb-4 text-yellow-400">2. Experience</h2>
 
       <div className="flex mb-8">

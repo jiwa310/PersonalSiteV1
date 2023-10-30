@@ -8,12 +8,13 @@ export default function Header({ scrollToSection }) {
 
     const handleScroll = () => {
       let st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > lastScrollTop) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
+      if (window.innerWidth >= 768) { // Only hide header on larger screens
+        if (st > lastScrollTop) {
+          setIsVisible(false);
+        } else {
+          setIsVisible(true);
+        }
       }
-      lastScrollTop = st <= 0 ? 0 : st;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -23,15 +24,14 @@ export default function Header({ scrollToSection }) {
   }, []);
 
   return (
-    <header className={`flex justify-between items-center pt-3 px-6 sticky top-0 w-full font-league-spartan transition-transform duration-200 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`} style={{backgroundColor: 'var(--color-background)', zIndex: 999}}>
-      <div>
-        {/* Replace "logo.svg" with the path to your logo */}
+    <header className={`flex justify-between items-center pt-5 md:pt-3 pb-5 md:pb-3 px-6 sticky top-0 w-full font-league-spartan transition-transform duration-200 ${isVisible ? 'translate-y-0' : '-translate-y-full'} md:shadow-none shadow-md`} style={{backgroundColor: 'var(--color-background)', zIndex: 999}}>
+      <div className="hidden md:block">
         <img src="Logo.svg" alt="Logo" className="h-15 w-auto" />
       </div>
 
       <nav>
-        <ul className="flex space-x-8">
-          <li><button onClick={() => scrollToSection('about-me')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">About Me</button></li>
+        <ul className="flex space-x-5 md:space-x-10">
+          <li><button onClick={() => scrollToSection('about-me')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">About</button></li>
           <li><button onClick={() => scrollToSection('experience')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Experience</button></li>
           <li><button onClick={() => scrollToSection('projects')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Projects</button></li>
           <li><button onClick={() => scrollToSection('skills')} className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">Skills</button></li>

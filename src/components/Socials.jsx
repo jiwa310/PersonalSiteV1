@@ -2,7 +2,7 @@ import React from 'react';
 
 const Socials = () => {
   return (
-    <div className="socials">
+    <div className="hidden md:block socials">
       <a href="https://www.linkedin.com/in/jim-wang-290b60249/" target="_blank" rel="noreferrer">
         <img src="linkedin.svg" alt="LinkedIn" />
       </a>

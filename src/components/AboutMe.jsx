@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
-    <section id="about-me" className="min-h-screen text-left flex pt-20 pl-20 pr-20">
-      <div className="w-1/2">
+    <section id="about-me" className="min-h-screen text-left flex flex-col md:flex-row pt-5 pl-5 md:pl-20 pr-5">
+      <div className="w-full md:w-1/2">
         <h2 className="text-4xl font-bold mb-4 text-yellow-400">1. About Me</h2>
         <p className="mb-4 text-l">
           Hello! I'm Jim Wang, a Computer Engineering student at the University of California, Santa Barbara with a fascination for computer vision, machine learning, and full-stack web development.
@@ -20,8 +20,7 @@ export default function AboutMe() {
         </p>
       </div>
 
-      <div className="w-1/3 h-auto pl-20 pt-20">
-        {/* Replace "me.jpg" with the path to your photo */}
+      <div className="w-1/2 md:w-1/3 h-auto pl-20 md:pl-20 md:pt-0">
         <img src="portrait.jpg" alt="Me" className="w-full h-auto" />
       </div>
     </section>

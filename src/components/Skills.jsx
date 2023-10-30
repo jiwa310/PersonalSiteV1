@@ -1,9 +1,9 @@
 export default function Skills() {
   return (
-    <section id="skills" className="min-h-screen text-left pt-20 pl-20 pr-20 flex flex-col">
+    <section id="skills" className="min-h-screen text-left pt-20 pl-5 md:pl-20 pr-10 flex flex-col">
       <h2 className="text-4xl font-bold mb-4 text-yellow-400">4. Skills</h2>
 
-      <div className="grid grid-cols-5 gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-8">
         {/* Languages */}
         <div>
             <h3 className="text-2xl font-bold mb-2 text-gray-300">Languages</h3>
