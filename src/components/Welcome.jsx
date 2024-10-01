@@ -5,9 +5,9 @@ export default function Welcome() {
       <h1 className="text-gray-300 text-5xl md:text-7xl font-bold mb-4">Jim Wang.</h1>
       <h2 className="text-gray-400 text-4xl md:text-6xl font-bold mb-4">I'm a Computer Engineering Student.</h2>
       <p className="mb-4 text-lg md:text-xl pr-10 md:pr-60 pb-5 md:pb-0">
-        I'm an undergraduate student at UCSB fascinated by computer vision, machine learning, and full-stack web development. I'm currently working as a Software Engineering Intern at
-        <a href="https://biopacificmip.org/" className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline"> BioPacific MIP</a>
-        , where I'm focused on creating a user-centric digital experience for researchers.
+        I'm an undergraduate student at UCSB fascinated by full-stack software development, embedded systems, and deep learning. I'm currently working as a Software Engineering Intern at
+        <a href="https://app.correkt.ai/" className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline"> Correkt </a>
+        , a startup innovating in advanced search technology. My focus is on developing high-performance software using Next.js and FastAPI.
       </p>
       <button 
         onClick={() => window.open("/Resume_JimW.pdf", "_blank")}

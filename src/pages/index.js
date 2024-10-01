@@ -57,7 +57,7 @@ export default function Home() {
       )}
       <div className={`container font-league-spartan transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
         <Header scrollToSection={scrollToSection} />
-        <main className>
+        <main>
           <Welcome />
           <div ref={aboutMeRef}><AboutMe /></div>
           <div ref={experienceRef}><Experience /></div>
