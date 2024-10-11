@@ -25,7 +25,7 @@ export default function Experience() {
         <img src="biopacific.jpg" alt="NSF Logo" className="w-[3.5rem] h-[3.5rem] mr-4" />
 
         <div className="w-3/4">
-          <h3 className="text-2xl font-semibold mb-2">Full-Stack Software Developer Intern at<a href="https://biopacificmip.org/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">NSF BioPacific MIP</a></h3>
+          <h3 className="text-2xl font-semibold mb-2">Full-Stack Software Developer Intern at <a href="https://biopacificmip.org/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition duration-200 hover:underline">NSF BioPacific MIP</a></h3>
           <p className="mb-4">June 2023 – June 2024</p>
 
           <ul className="list-disc pl-8">
