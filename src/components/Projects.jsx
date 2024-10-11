@@ -12,7 +12,18 @@ export default function Projects() {
             <h3 className="text-3xl font-semibold mb-2 text-gray-200">RateMyResume</h3>
             <p className="mb-4 text-xl">A web app that allows users to upload a resume in PDF format. We will automatically anonymize the resume by redacting any personally identifiable information (PII) on it, and display it online for user feedback.</p>
             <p className="mb-4 text-xl text-gray-300">Skills: Next.js, FastAPI, MongoDB, Amazon Comprehend API, Git</p>
-            <p>Nov. 2022 – April 2023</p>
+            <p>February 2024</p>
+          </div>
+        </a>
+
+        {/* SLASHER Project */}
+        <a href="https://github.com/jiwa310/Slasher/tree/main" target="_blank" rel="noopener noreferrer" className="border border-gray-300 p-4 rounded hover:border-yellow-400 transition duration-200 flex items-start transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-yellow">
+          <img src="/Slasher.png" alt="SLASHER Project Image" className="w-1/5 h-auto mb-4 pr-10" />
+          <div className="w-3/4">
+            <h3 className="text-3xl font-semibold mb-2 text-gray-200">SLASHER</h3>
+            <p className="mb-4 text-xl">An arcade game that tests a user's reflexes and response time. Users can choose game modes (classic, endless, or timed) and difficulty levels. The game uses an accelerometer to sense hand motion and controls an LED display for gameplay.</p>
+            <p className="mb-4 text-xl text-gray-300">Skills: Arduino, C++, Hardware Integration, Game Development</p>
+            <p>November 2023</p>
           </div>
         </a>
 
