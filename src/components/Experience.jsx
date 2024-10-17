@@ -12,10 +12,12 @@ export default function Experience() {
           <p className="mb-4">Sept 2024 – Present</p>
 
           <ul className="list-disc pl-8">
-            <li>Spearheaded the design and implementation of the search results UI using Next.js, enhancing user experience for thousands of active users.</li>
-            <li>Collaborated with the backend team to seamlessly integrate the frontend with a FastAPI backend, ensuring efficient data flow and optimal performance</li>
-            <li>Utilized React hooks and custom components to create a responsive and interactive search interface, improving user engagement metrics by 30%</li>
-            <li>Optimized application performance through code splitting and lazy loading, reducing initial load time by 1.5 seconds.</li>
+            <li>Worked on a multimodal social media search engine that aggregates and analyzes diverse user-generated content across platforms to deliver comprehensive insights on trending topics and public opinion.</li>
+            <li>Built a modular Next.js frontend with dynamic component loading based on API calls to our FastAPI backend, and optimized application performance through code splitting and lazy loading</li>
+            <li>Helped implemented a robust search system with filtering through a fine-tuned Cerebras AI large language model to enhance result relevance</li>
+            <li>Helped engineer a heatmap-based recommendation system for real-time article suggestions, leveraging Pinecone for vector embeddings, Redis to cache user heatmaps, and MongoDB for backup storage real-time article suggestions</li>
+            <li>Integrated RESTful APIs using React Query for efficient data fetching, caching, and state management, significantly improving application responsiveness</li>
+            <li>Implemented comprehensive automated testing suite using Jest and React Testing Library</li>
           </ul>
         </div>
       </div>
@@ -30,10 +32,10 @@ export default function Experience() {
 
           <ul className="list-disc pl-8">
             <li>Led the development of a full-stack web application that helps researchers design experiments and control Chemspeed robotic chemistry equipment, used by 30+ researchers.</li>
-            <li>Established a robust PostgreSQL database to store and manage user profiles, experiment details, and research data.</li>
+            <li>Designed and optimized a PostgreSQL database schema to efficiently store and retrieve large volumes of experimental data.</li>
             <li>Used Next.js to make the web application robust and scalable. Implemented server-side rendering for improved performance and SEO.</li>
             <li>Set up automated testing with Jest and React Testing Library, reaching 90% code coverage and halving bugs</li>
-            <li>Integrated the application with the official Biopacific MIP user portal using Django for seamless user authentication.</li>
+            <li>Implemented a distributed task queue system using Redis to manage concurrent experiment requests across multiple Chemspeed robots.</li>
           </ul>
         </div>
       </div>
